@@ -19,6 +19,8 @@ public class Movement : MonoBehaviour
     public float minAnimationspeed;
     public GameObject Around;
     public GameObject nitrogenflip;
+    //for tutorial
+    public GameObject jumptutor;
 
 
 
@@ -194,7 +196,7 @@ public class Movement : MonoBehaviour
     }
 
 
-
+   
 
     private void FixedUpdate()
     {

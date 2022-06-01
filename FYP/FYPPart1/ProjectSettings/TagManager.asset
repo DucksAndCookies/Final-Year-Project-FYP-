@@ -15,7 +15,7 @@ TagManager:
   - Elements
   - Enemies
   - Player
-  - 
+  - tutorial
   - 
   - 
   - 
@@ -58,4 +58,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2796500541
+    locked: 0
+  - name: tutorial
+    uniqueID: 1949953585
     locked: 0

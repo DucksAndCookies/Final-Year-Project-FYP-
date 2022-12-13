@@ -89236,6 +89236,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 7550bc0e9e56f1845bd52b1543e0b097, type: 2}
+    - target: {fileID: 2041805566, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.56
+      objectReference: {fileID: 0}
     - target: {fileID: 1262423719267552187, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -89984,7 +89988,7 @@ MonoBehaviour:
   compressSpeed: 0.01
   step: 0.1
   dir: 0
-  DestryRangY: 0.001
+  DestryRangY: 0.000001
 --- !u!1 &757004024 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4877270661188586621, guid: 45ab1d0021058204fbb8813abe43f017, type: 3}

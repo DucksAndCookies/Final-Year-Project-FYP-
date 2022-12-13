@@ -405,8 +405,17 @@ public class Movement : MonoBehaviour
    
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            SetInt("hyd", 0);
+            SetInt("nitrogen", 0);
+            SetInt("Helium", 0);
 
-       
+
+
+        }
+
+
 
 
         if (grounded == true)

@@ -841,6 +841,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 646770722, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -86.399994
+      objectReference: {fileID: 0}
     - target: {fileID: 985133706, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -868,6 +872,14 @@ PrefabInstance:
     - target: {fileID: 985133706, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075116881, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -86.899994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167914975, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -86.399994
       objectReference: {fileID: 0}
     - target: {fileID: 1349742312, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -912,6 +924,10 @@ PrefabInstance:
         turns Blue when its frozen.
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041805566, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.18
       objectReference: {fileID: 0}
     - target: {fileID: 1262423719178634543, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1608,9 +1624,9 @@ GameObject:
   - component: {fileID: 988726564}
   - component: {fileID: 988726566}
   - component: {fileID: 988726567}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Nitrogen
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1622,7 +1638,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988726563}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1649,7 +1665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988726563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 186.16, y: 13.41, z: -1.0224078}
+  m_LocalPosition: {x: 190.31, y: 13.71, z: -1.0224078}
   m_LocalScale: {x: 0.17524645, y: 0.1221804, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

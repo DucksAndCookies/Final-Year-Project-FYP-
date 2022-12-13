@@ -51,7 +51,7 @@ public class EpowerUp : MonoBehaviour
             //transform.Translate(Vector3.Normalize(target.transform.position - transform.position) * step);
             self.transform.localScale = new Vector2(self.transform.localScale.x-compressSpeed, self.transform.localScale.y-compressSpeed);
         }
-        if (Physics2D.OverlapCircle(self.transform.position, 0.1f, what_is_player))//self.transform.localScale.y < DestryRangY)
+        if (Physics2D.OverlapCircle(self.transform.position, DestryRangY, what_is_player))//self.transform.localScale.y < DestryRangY)
         {
             self.SetActive(false);
         }

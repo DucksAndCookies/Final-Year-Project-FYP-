@@ -440,7 +440,7 @@ MonoBehaviour:
   followTransform: {fileID: 881210198}
   maxx: 220
   minx: -20
-  maxy: 15
+  maxy: 14
   miny: -6
 --- !u!1001 &241424169
 PrefabInstance:

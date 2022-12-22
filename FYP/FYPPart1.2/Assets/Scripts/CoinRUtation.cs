@@ -8,10 +8,13 @@ public class CoinRUtation : MonoBehaviour
     public bool direction;
     public float speed= 0.05f;
     public Vector3 scalx;
+    public AudioClip sounds;
+    public AudioSource aud;
     // Start is called before the first frame update
     void Start()
     {
         scalx = new Vector3(speed, 0,0);
+        aud = GetComponent<AudioSource>();
     }
     private void FixedUpdate()
     {
@@ -25,14 +28,16 @@ public class CoinRUtation : MonoBehaviour
         thisOBJ.transform.localScale += scalx;
         scalx = new Vector3(speed, 0, 0);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+   /* private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
+            
+            aud.PlayOneShot(sounds, 1);
             Debug.Log("this is coin");
             Destroy(thisOBJ);
         }
-    }
+    }*/
     
 
     // Update is called once per frame

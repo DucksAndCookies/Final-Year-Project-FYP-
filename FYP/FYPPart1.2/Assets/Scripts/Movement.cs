@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 //using UnityEngine.UI;
-//using System.Collections;
+using System.Collections;
 
 public class Movement : MonoBehaviour
 {
@@ -66,14 +66,16 @@ public class Movement : MonoBehaviour
     public GameObject PouseButton;
     public GameObject PlayButton;
 
+    public AudioClip[] sounds;
+    AudioSource aud;
 
 
 
     void Start()
     {
         Nitrogen.GetComponent<ParticleSystem>().enableEmission = false;
-        
 
+        aud = GetComponent<AudioSource>();
 
     }
     
@@ -253,7 +255,7 @@ public class Movement : MonoBehaviour
         }
     }
 
-
+   
 
 
     private void FixedUpdate()
@@ -367,9 +369,16 @@ public class Movement : MonoBehaviour
             
 
         }
-      
+        if (((Input.GetKey(KeyCode.Space) || releaseda == true) && (grounded) && elementSet == true))
+        {
+
+            aud.PlayOneShot(sounds[0], 1);
+
+        }
+
         if (((Input.GetKey(KeyCode.Space) || releaseda == true) && (grounded) && elementSet == true) || (JumpVelocity != maxJumpVelocityVal))
         {
+            
             JumpVelocity -= increasingJumpVelovity;
             rb2d.velocity = new Vector2(rb2d.velocity.x, JumpVelocity); // Vector2.up * JumpVelocity;
             releaseda = false;
@@ -395,14 +404,26 @@ public class Movement : MonoBehaviour
             }
             */
         }
+       
         // This is where i am coding nitrogen
-        
+
 
 
 
 
     }
-   
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<CoinRUtation>())
+        {
+            Destroy(collision.gameObject);
+            aud.PlayOneShot(sounds[1], 1);
+            Debug.Log("this is coin");
+            
+        }
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -443,6 +464,7 @@ public class Movement : MonoBehaviour
         }
         if (elementDetect == true )
         {
+            aud.PlayOneShot(sounds[2], 0.6f);
             cutscene = false;
 
             if (SceneManager.GetActiveScene().buildIndex == 1)

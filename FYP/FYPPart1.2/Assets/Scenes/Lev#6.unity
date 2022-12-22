@@ -499,7 +499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4877270661188586621, guid: 45ab1d0021058204fbb8813abe43f017, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6770071654548850142, guid: 45ab1d0021058204fbb8813abe43f017, type: 3}
       propertyPath: m_Camera
@@ -877,6 +877,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -86.899994
       objectReference: {fileID: 0}
+    - target: {fileID: 1112239678, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1112239679, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 358
+      objectReference: {fileID: 0}
+    - target: {fileID: 1112239679, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 312.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1112239681, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 56d84991286850f428b4e7df0cca7380, type: 3}
     - target: {fileID: 1167914975, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -86.399994
@@ -913,6 +929,22 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 192290558}
+    - target: {fileID: 1783435732, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -53.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435732, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435732, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435732, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_text
       value: 'Hold down "N" Button to Shoot liquid Nitrogen and freeze the enemy.
@@ -924,6 +956,26 @@ PrefabInstance:
         turns Blue when its frozen.
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2041805566, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1665,7 +1717,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988726563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 190.31, y: 13.71, z: -1.0224078}
+  m_LocalPosition: {x: 192.2, y: 14.6, z: -1.0224078}
   m_LocalScale: {x: 0.17524645, y: 0.1221804, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1745,7 +1797,7 @@ MonoBehaviour:
   compressSpeed: 0.001
   step: 0.1
   dir: 0
-  DestryRangY: 0.003
+  DestryRangY: 1.5
 --- !u!1 &1017466314 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1262423719267552198, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}

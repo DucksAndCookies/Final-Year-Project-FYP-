@@ -31,6 +31,10 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        windPart[0].SetActive(false);
+        windPart[1].SetActive(false);
+        windPart[2].SetActive(false);
+        windPart[3].SetActive(false);
         Rigidbody2D po = Instantiate(Craw, spawningPoints[i].position, spawningPoints[i].rotation);
         po.velocity = transform.right * speed;
 
@@ -159,6 +163,7 @@ public class Boss : MonoBehaviour
                     windPart[0].SetActive(true);
                     windPart[1].SetActive(true);
                     windPart[2].SetActive(true);
+                    windPart[3].SetActive(true);
                     Destroy(gameObject);
                 }
             }

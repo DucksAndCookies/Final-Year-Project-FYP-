@@ -464,25 +464,28 @@ public class Movement : MonoBehaviour
         }
         if (elementDetect == true  )
         {
-            aud.PlayOneShot(sounds[2], 0.6f);
+            
             cutscene = false;
 
-            if (SceneManager.GetActiveScene().buildIndex == 1)
+            if (SceneManager.GetActiveScene().buildIndex == 1 && Getint("hyd")==0)
             {
+                aud.PlayOneShot(sounds[2], 0.6f);
                 SetInt("hyd", 1);
 
                 KeyA.SetActive(true);
                 elementSet = true;
             }
-            if (SceneManager.GetActiveScene().buildIndex == 6)
+            if (SceneManager.GetActiveScene().buildIndex == 6 && Getint("nitrogen") == 0)
             {
+                aud.PlayOneShot(sounds[2], 0.6f);
                 SetInt("nitrogen", 1);
 
                 KeyB.SetActive(true);
                 elementSet1 = true;
             }
-            if (SceneManager.GetActiveScene().buildIndex == 16)
+            if (SceneManager.GetActiveScene().buildIndex == 16 && Getint("Helium") == 0)
             {
+                aud.PlayOneShot(sounds[2], 0.6f);
                 SetInt("Helium", 1);
 
                 KeyC.SetActive(true);

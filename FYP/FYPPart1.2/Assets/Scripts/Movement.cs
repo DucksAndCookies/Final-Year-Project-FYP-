@@ -53,6 +53,7 @@ public class Movement : MonoBehaviour
     public bool Quit;
     public bool cutscene = false;
     public bool flying;
+    public int SaveSene=0;
     public Transform foot;
     public Transform Element;
     public Transform Nitrogen;
@@ -76,6 +77,7 @@ public class Movement : MonoBehaviour
         Nitrogen.GetComponent<ParticleSystem>().enableEmission = false;
 
         aud = GetComponent<AudioSource>();
+        
 
     }
     
@@ -90,16 +92,14 @@ public class Movement : MonoBehaviour
 
     void Awake()
     {
-        rb2d = transform.GetComponent<Rigidbody2D>();
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        
+        if (SceneManager.GetActiveScene().buildIndex != 0)
         {
-            SetInt("hyd", 0);
-            SetInt("nitrogen", 0);
-            SetInt("Helium", 0);
-
-
-
+            SetInt("SaveScene", SceneManager.GetActiveScene().buildIndex);
+            
         }
+        rb2d = transform.GetComponent<Rigidbody2D>();
+        
         if (Getint("hyd") == 1)
         {
             KeyA.SetActive(true);
@@ -130,7 +130,7 @@ public class Movement : MonoBehaviour
         return PlayerPrefs.GetInt(KeyName);
     }
     
-
+   
 
 
 

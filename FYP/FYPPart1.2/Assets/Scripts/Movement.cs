@@ -269,7 +269,7 @@ public class Movement : MonoBehaviour
         //Enemy_head = Physics2D.OverlapCircle(foot.position, 0.1f, what_is_Enemy);
         grounded = Physics2D.OverlapCircle(foot.position, 0.1f, what_is_Ground);
         
-        elementDetect = Physics2D.OverlapCircle(Element.position, 0.05f, what_is_Element);
+        elementDetect = Physics2D.OverlapCircle(Element.position, 0.1f, what_is_Element);
         flying = Physics2D.OverlapCircle(foot.position, 0.9f, What_is_wind);
 
         /*PlayerghangeYRateBefore = Around.transform.position.y;
@@ -462,7 +462,7 @@ public class Movement : MonoBehaviour
         {
             animator.SetBool("jumpDown", false);
         }
-        if (elementDetect == true )
+        if (elementDetect == true  )
         {
             aud.PlayOneShot(sounds[2], 0.6f);
             cutscene = false;

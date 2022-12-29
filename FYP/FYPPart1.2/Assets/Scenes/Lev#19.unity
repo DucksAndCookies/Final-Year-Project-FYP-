@@ -649,11 +649,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1112239679, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 344.3
+      value: 394.2
       objectReference: {fileID: 0}
     - target: {fileID: 1112239679, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 96.5
+      value: 133.9
       objectReference: {fileID: 0}
     - target: {fileID: 1167914975, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -682,6 +682,22 @@ PrefabInstance:
     - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_text
       value: Hold "He" Button in the wind pressure to fly upward while in Air.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190335
       objectReference: {fileID: 0}
     - target: {fileID: 1262423719267552186, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: wind

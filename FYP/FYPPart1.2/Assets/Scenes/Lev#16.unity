@@ -515,15 +515,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1112239678, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1112239679, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 428.6
+      value: 512.25
       objectReference: {fileID: 0}
     - target: {fileID: 1112239679, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 41.9
+      value: 71.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1112239679, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -171
       objectReference: {fileID: 0}
     - target: {fileID: 1167914975, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -536,6 +540,22 @@ PrefabInstance:
     - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_text
       value: While in Air press "He" Button to Glide.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783435733, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190335
       objectReference: {fileID: 0}
     - target: {fileID: 2041805566, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
       propertyPath: m_LocalPosition.x

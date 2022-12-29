@@ -9,6 +9,7 @@ public class PuzzleMang : MonoBehaviour
     public LayerMask what_is_enemy;
     public bool PuzzleSwichFire;
     private float z = -30f;
+    private bool solved=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +22,10 @@ public class PuzzleMang : MonoBehaviour
     void Update()
     {
         PuzzleSwichFire = Physics2D.OverlapCircle(Puzzle.transform.position, 2.5f, what_is_enemy);
-        if (PuzzleSwichFire == true)
+        if (PuzzleSwichFire == true && solved==false)
         {
+            Puzzle.GetComponent<BoxCollider2D>().enabled = false;
+            solved = true;
             FirePuzzle.SetActive(false);
             Puzzle.transform.Rotate(0, 0, z);
             z = 0;

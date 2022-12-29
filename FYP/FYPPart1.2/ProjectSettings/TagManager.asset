@@ -10,6 +10,7 @@ TagManager:
   - BulletEnd
   - Craw
   - nitrogen
+  - Puzzle
   layers:
   - Default
   - TransparentFX

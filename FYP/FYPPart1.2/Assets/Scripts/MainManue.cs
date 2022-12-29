@@ -34,6 +34,7 @@ public class MainManue : MonoBehaviour
         SetInt("hyd", 0);
         SetInt("nitrogen", 0);
         SetInt("Helium", 0);
+        SetInt("SaveScene", 0);
         can.SetActive(false);
         Camera1.enabled = false;
         Camera2.enabled = false;

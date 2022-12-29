@@ -231,7 +231,7 @@ MonoBehaviour:
   what_is_Player:
     serializedVersion: 2
     m_Bits: 520
-  player: {fileID: 398400193}
+  player: {fileID: 0}
   here: {fileID: 209617134}
   transition: {fileID: 0}
   transitionTime: 1
@@ -40001,11 +40001,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1262423719267552198, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
   m_PrefabInstance: {fileID: 1898829369}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &398400193 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 1262423719267552185, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
-  m_PrefabInstance: {fileID: 1898829369}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &398400196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1262423719267552187, guid: 2085b50237fe5954f84b3c7d04810e24, type: 3}
@@ -40753,6 +40748,14 @@ PrefabInstance:
     - target: {fileID: 200145555078602438, guid: 0f6e972a827b6ae4fbd37e33d4c45c26, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013015197780690991, guid: 0f6e972a827b6ae4fbd37e33d4c45c26, type: 3}
+      propertyPath: m_Size.x
+      value: 27.55915
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013015197780690991, guid: 0f6e972a827b6ae4fbd37e33d4c45c26, type: 3}
+      propertyPath: m_Offset.x
+      value: 18.636806
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6e972a827b6ae4fbd37e33d4c45c26, type: 3}

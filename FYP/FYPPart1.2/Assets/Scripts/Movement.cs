@@ -223,6 +223,11 @@ public class Movement : MonoBehaviour
         PlayButton.SetActive(false);
         Time.timeScale = 1;
     }
+    public void Mainmnu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
+    }
     public void PointerDownB()
     {
         if (elementSet1 == true)
@@ -421,6 +426,10 @@ public class Movement : MonoBehaviour
             aud.PlayOneShot(sounds[1], 1);
             Debug.Log("this is coin");
             
+        }
+        if (collision.tag == "Puzzle")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
